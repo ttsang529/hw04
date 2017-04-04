@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<script src="https://d3js.org/d3.v3.js"></script>
+	</head>
+
+	<body>
+        <script>
+            //var arr1=["A","B","A","C"];
+            var arry2=[
+                 {city:"台北市",cid="A"},
+                 {city:"台北市",cid="A"},
+                 {city:"台北市",cid="A"},
+                 {city:"台北市",cid="A"},
+            ]
+            var uniArr=unique(arr1);
+            console.log(uniArr);
+            function unique(array){
+                var n=[];
+                
+                for (var i=0;i<array.length;i++){
+                    if(n.indexOf(array[i])===-1){
+                       n.push(array[i]);
+                    }
+                }
+                
+                return n;
+            }
+        </script>
+	</body>
+</html>
